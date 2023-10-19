@@ -7,7 +7,7 @@ public class Rugby {
         System.out.println("Команда 1");
         for (int i = 0; i < 25; i++) {
             int age = team.nextInt(22) + 18;
-            System.out.println("Гравець №"+i+" " + age + " років");
+            System.out.print("Гравець №"+i+" " + age + " років"+ " | ");
             sum +=age;
         }
         double averageAge = (double) sum / 25;
@@ -17,7 +17,7 @@ public class Rugby {
         System.out.println("Команда 2");
         for (int i = 0; i < 25; i++) {
             int age2 = team.nextInt(22) + 18;
-            System.out.println("Гравець №"+i+" "+ age2+ " років");
+            System.out.print("Гравець №"+i+" "+ age2+ " років"+ " | ");
             sum2 +=age2;
         }
         double averageAge2 = (double) sum2 / 25;
