@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class BurgersMain {
     public static void main(String[] args) {
-        Burgers regularBurger = Burgers.createUsualBurger();
-        Burgers dietBurger = Burgers.createDietBurger();
-        Burgers doubleMeatBurger = Burgers.createDoubleMeatBurger();
+        Burgers regularBurger = new Burgers("Булочка", true, "Сир чеддер", "Зелень");
+        Burgers dietBurger = new Burgers("Здорова булочка", 1, false, "Сир без жиру", "Зелень");
+        Burgers doubleMeatBurger = new Burgers("Булочка", 2, true, "Сир","Зелень");
 
         System.out.println("Склад бургерів: ");
         System.out.println("Звичайний бургер: " + regularBurger);
@@ -18,7 +18,7 @@ public class BurgersMain {
             int choice = scanner.nextInt();
             switch (choice){
                 case 1:
-                    System.out.println("Ви замовили звичайний бургер");
+                   System.out.println("Ви замовили звичайний бургер");
                     System.out.println(regularBurger);
                     return;
                 case 2:
@@ -26,10 +26,10 @@ public class BurgersMain {
                     System.out.println(dietBurger);
                     return;
                 case 3:
-                    System.out.println("Ви замовили бургер з подвійним м'ясом");
+                   System.out.println("Ви замовили бургер з подвійним м'ясом");
                     System.out.println(doubleMeatBurger);
                     return;
-                case 4:
+               case 4:
                     return;
             }
         }
@@ -41,5 +41,5 @@ public class BurgersMain {
         System.out.println("2. Дієтичний бургер");
         System.out.println("3. Бургер з подвійним м'ясом");
         System.out.println("4. Вихід з меню");
-    }
+   }
 }
