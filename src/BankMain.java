@@ -8,7 +8,7 @@ public class BankMain {
         "Банк Восток,ТАСКОМБАНК,Універсал Банк,ПРАВЕКС-БАНК,ПІРЕУС БАНК МКБ";
 
         String [] bankNames = bankNamesString.split(",");
-        double price [] = new double[bankNames.length];
+        double [] price  = new double[bankNames.length];
         Bank [] banks = new Bank[bankNames.length];
 
         for (int i = 0; i < bankNames.length; i++) {
